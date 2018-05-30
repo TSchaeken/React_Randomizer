@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
+import styles from './style.css'
 
 const GameCard = props => (
-  <div>
-    <img src={props.image} />
+  <div >
+    <img src={props.image} style={styles.image} data-id={props.id} alt="A building" onClick={() => props.addToClicked(props.id)}/>
   </div>
 );
 
